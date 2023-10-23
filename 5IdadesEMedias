@@ -1,0 +1,16 @@
+// Cria um array para armazenar as idades
+  var idades = [];
+  // Solicita ao usuário que digite as idades
+  for (var i = 0; i < 5; i++) {
+    idades.push(prompt("Digite a idade " + (i + 1) + ": "));
+  }
+  // Converte as idades para números
+  idades = idades.map(Number);
+  // Calcula a média das idades
+  var media = idades.reduce(function(a, b) {
+    return a + b;
+  }) / idades.length;
+  // Exibe a média das idades
+  console.log("A média das idades é: " + media);
+}
+mediaIdades(); // A média das idades é: 25
