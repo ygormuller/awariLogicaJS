@@ -1,0 +1,16 @@
+// Cria um array para armazenar as idades
+  var idades = [];
+  // Solicita ao usuário que digite as idades
+  for (var i = 0; i < 10; i++) {
+    idades.push(prompt("Digite a idade " + (i + 1) + ": "));
+  }
+  // Converte as idades para números
+  idades = idades.map(Number);
+  // Conta a quantidade de pessoas com idade maior ou igual a 18 anos
+  var maioresDeIdade = idades.filter(function(idade) {
+    return idade >= 18;
+  }).length;
+  // Exibe a quantidade de pessoas com idade maior ou igual a 18 anos
+  console.log("A quantidade de pessoas com idade maior ou igual a 18 anos é: " + maioresDeIdade);
+}
+maioresDeIdade(); // A quantidade de pessoas com idade maior ou igual a 18 anos é: 5
