@@ -1,0 +1,28 @@
+// Cria uma string para armazenar o quadrado
+  var quadrado = "";
+  // Adiciona uma linha de asteriscos à string
+  for (var i = 0; i < tamanho; i++) {
+    quadrado += "*";
+  }
+  // Adiciona uma nova linha à string
+  quadrado += "\n";
+  // Repete o processo para cada linha do quadrado
+  for (var i = 0; i < tamanho - 2; i++) {
+    quadrado += "*";
+    for (var j = 0; j < tamanho - 2; j++) {
+      quadrado += " ";
+    }
+    quadrado += "*\n";
+  }
+  // Adiciona uma linha de asteriscos à string
+  for (var i = 0; i < tamanho; i++) {
+    quadrado += "*";
+  }
+  // Exibe o quadrado no console
+  console.log(quadrado);
+}
+desenhaQuadrado(5); // *****
+//      *   *
+//      *   *
+//      *   *
+// *****
