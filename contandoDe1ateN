@@ -1,0 +1,6 @@
+const n = window.prompt('Digite um número inteiro:', '10');
+for (var i = 1; i <= n; i++) {
+    console.log(i);
+  }
+}
+contagem(5); // 1 2 3 4 5
