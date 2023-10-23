@@ -1,0 +1,24 @@
+// Cria uma string para armazenar o triângulo
+  var triangulo = "";
+  // Adiciona uma linha de asteriscos à string
+  for (var i = 0; i < altura; i++) {
+    triangulo += "*";
+  }
+  // Adiciona uma nova linha à string
+  triangulo += "\n";
+  // Repete o processo para cada linha do triângulo
+  for (var i = 0; i < altura - 1; i++) {
+    triangulo += " ";
+    for (var j = 0; j < altura - 1 - i; j++) {
+      triangulo += "*";
+    }
+    triangulo += "\n";
+  }
+  // Exibe o triângulo no console
+  console.log(triangulo);
+}
+imprimeTriangulo(5); // *
+//                    **
+//                   ***
+//                  ****
+//                 *****
