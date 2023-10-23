@@ -1,0 +1,14 @@
+console.log('Números pares:');
+  for (var i = 1; i <= n; i++) {
+    if (i % 2 == 0) {
+      console.log(i);
+    }
+  }
+  console.log('Números ímpares:');
+  for (var i = 1; i <= n; i++) {
+    if (i % 2 != 0) {
+      console.log(i);
+    }
+  }
+}
+numerosParesImpares(10); // Números pares: 2 4 6 8 10 Números ímpares: 1 3 5 7 9
